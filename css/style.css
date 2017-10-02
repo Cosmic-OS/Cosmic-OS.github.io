@@ -45,17 +45,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-selection {
-  color: #4285F4;
+  color: #818892;
   background: #f9f6f0;
 }
 
 ::-moz-selection {
-  color: #4285F4;
+  color: #818892;
   background: #f9f6f0;
 }
 
 ::selection {
-  color: #4285F4;
+  color: #818892;
   background: #f9f6f0;
 }
 
@@ -81,13 +81,13 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 15px;
   }
   #inf-header #navbar li a {
-    color: rgba(0, 0, 0, 0.5) !important;
+    color: #ffffff !important;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
   }
   #inf-header #navbar li a:hover {
-    color: #ffffff !important;
+    color: #4285F4 !important;
   }
   #inf-header #navbar li a span:before {
     background: transparent !important;
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #inf-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: #4285F4;
   position: relative;
 }
 #inf-header #navbar li a span {
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 #inf-header #navbar li a:hover {
-  color: #262626;
+  color: #fff;
 }
 #inf-header #navbar li a:hover span:before {
   visibility: visible;
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 #inf-header #navbar li.active a {
   background: transparent;
   background: none;
-  color: #262626;
+  color: #4285F4;
 }
 #inf-header #navbar li.active a span:before {
   visibility: visible;
@@ -675,18 +675,18 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel-fullwidth .item img {
   max-width: 100%;
 }
-.owl-carousel-fullwidth .item .iphone-image {
+.owl-carousel-fullwidth .item .phone-image {
   position: relative;
   z-index: 99;
 }
-.owl-carousel-fullwidth .item .iphone-image .iphone {
+.owl-carousel-fullwidth .item .phone-image .phone {
   float: right;
   text-align: right;
   position: relative;
   bottom: -12em;
 }
 @media screen and (max-width: 768px) {
-  .owl-carousel-fullwidth .item .iphone-image .iphone {
+  .owl-carousel-fullwidth .item .phone-image .phone {
     bottom: 0em;
     text-align: center;
     float: none !important;
@@ -694,7 +694,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 }
-.owl-carousel-fullwidth .item .iphone-image .iphone img {
+.owl-carousel-fullwidth .item .phone-image .phone img {
   max-width: 100%;
 }
 .owl-carousel-fullwidth .item .inf-owl-text {
