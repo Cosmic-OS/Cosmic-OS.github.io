@@ -18,19 +18,19 @@ body {
   line-height: 1.8;
   color: #ffffff;
   color: #ffffff;
-  background: #262626;
+  background: #180830;
   height: 100%;
   position: relative;
 }
 
 a {
-  color: #4285F4;
+  color: #F00850;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #4285F4;
+  color: #F00850;
   outline: none;
 }
 
@@ -70,14 +70,14 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   #inf-header {
     margin-top: 0;
-    background: #262626;
+    background: #180830;
     -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
   #inf-header .navbar-brand {
-    color: #4285F4 !important;
+    color: #F00850 !important;
     padding-left: 15px;
   }
   #inf-header #navbar li a {
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
   }
   #inf-header #navbar li a:hover {
-    color: #4285F4 !important;
+    color: #F00850 !important;
   }
   #inf-header #navbar li a span:before {
     background: transparent !important;
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   #inf-header #navbar li.active a {
     background: transparent;
     background: none;
-    color: #4285F4 !important;
+    color: #F00850 !important;
   }
   #inf-header #navbar li.active a span:before {
     visibility: visible;
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #inf-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: #4285F4;
+  color: #F00850;
   position: relative;
 }
 #inf-header #navbar li a span {
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #4285F4;
+  background-color: #F00850;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 #inf-header #navbar li.active a {
   background: transparent;
   background: none;
-  color: #4285F4;
+  color: #F00850;
 }
 #inf-header #navbar li.active a span:before {
   visibility: visible;
@@ -164,11 +164,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-weight: 700;
   padding-left: 15px;
-  color: #4285F4;
+  color: #F00850;
 }
 #inf-header.navbar-fixed-top {
   position: fixed !important;
-  background: #262626;
+  background: #180830;
   -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -177,22 +177,22 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 #inf-header.navbar-fixed-top .navbar-brand {
-  color: #4285F4;
+  color: #F00850;
   padding-left: 15px;
 }
 #inf-header.navbar-fixed-top #navbar li a {
-  color: #4285F4;
+  color: #F00850;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 #inf-header.navbar-fixed-top #navbar li a:hover {
-  color: #4285F4;
+  color: #F00850;
 }
 #inf-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #4285F4;
+  color: #F00850;
 }
 #inf-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #adadad;
 }
 #inf-header .navbar-default .brand-slogan em {
-  color: #4285F4;
+  color: #F00850;
   font-style: normal;
 }
 #inf-header a {
@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 80px;
   height: 2px;
-  background: #4285F4;
+  background: #F00850;
   left: 50%;
   margin-left: -40px;
   bottom: 0;
@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .inf-nav-toggle.active i::before, .inf-nav-toggle.active i::after {
-  background: #4285F4;
+  background: #F00850;
 }
 .inf-nav-toggle:hover, .inf-nav-toggle:focus, .inf-nav-toggle:active {
   outline: none;
@@ -317,18 +317,18 @@ h1, h2, h3, h4, h5, h6 {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #4285F4;
+  color: #F00850;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #4285F4;
+  background: #F00850;
   transition: all .2s ease-out;
 }
 .inf-nav-toggle i::before, .inf-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 3px;
-  background: #4285F4;
+  background: #F00850;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -435,18 +435,18 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #4285F4;
-  color: #262626;
+  background: #F00850;
+  color: #180830;
   border: none !important;
   border: 2px solid transparent !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #4285F4;
+  background: #F00850;
 }
 .btn:hover, .btn:active, .btn:focus {
   background: #393e46 !important;
-  color: #262626;
+  color: #180830;
   outline: none !important;
 }
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
@@ -482,12 +482,12 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: none;
 }
 .social li a.social-box {
-  background: #4285F4;
-  color: #262626;
+  background: #F00850;
+  color: #180830;
 }
 .social li a.social-circle {
-  background: #4285F4;
-  color: #262626;
+  background: #F00850;
+  color: #180830;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -497,12 +497,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #393e46 !important;
 }
 .social.social-box a {
-  background: #4285F4;
-  color: #262626;
+  background: #F00850;
+  color: #180830;
 }
 .social.social-circle a {
-  background: #4285F4;
-  color: #262626;
+  background: #F00850;
+  color: #180830;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -520,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .owl-carousel .btn-primary:hover, .owl-carousel .btn-primary:focus, .owl-carousel .btn-primary:active {
   background: transparent !important;
-  border: 2px solid #262626 !important;
+  border: 2px solid #180830 !important;
 }
 
 .owl-carousel .owl-controls,
@@ -585,11 +585,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-next i,
 .owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-prev i {
-  color: #262626;
+  color: #180830;
 }
 .owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-next:hover i,
 .owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-prev:hover i {
-  color: #262626;
+  color: #180830;
 }
 
 @media screen and (max-width: 768px) {
@@ -640,7 +640,7 @@ h1, h2, h3, h4, h5, h6 {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: white;
   background: transparent;
-  border: 2px solid #262626;
+  border: 2px solid #180830;
 }
 
 .owl-carousel-fullwidth .item, .owl-carousel-fullwidth .inf-owl-text-wrap {
@@ -713,7 +713,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid white;
 }
 .owl-carousel-fullwidth .item .inf-owl-text .inf-lead, .owl-carousel-fullwidth .item .inf-owl-text .inf-lead-2, .owl-carousel-fullwidth .item .inf-owl-text .inf-sub-lead {
-  color: #262626;
+  color: #180830;
   margin: 0;
   padding: 0;
 }
@@ -723,10 +723,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #262626;
+  color: #180830;
   font-size: 50px;
   line-height: 50px;
-  color: #262626;
+  color: #180830;
 }
 @media screen and (max-width: 768px) {
   .owl-carousel-fullwidth .item .inf-owl-text .inf-lead {
