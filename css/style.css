@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-heading h2 {
   font-size: 50px;
   font-weight: 300;
-  color: #444;
+  color: #F00850;
   text-transform: uppercase;
   position: relative;
   display: block;
