@@ -789,4 +789,12 @@ h1, h2, h3, h4, h5, h6 {
   animation-fill-mode: both;
 }
 
+.codebox {
+        border:1px solid black;
+        background-color:#EEEEFF;
+        white-space: pre-line;
+        padding:10px;
+        font-size:0.9em;
+        display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
