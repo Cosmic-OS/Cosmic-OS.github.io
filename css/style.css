@@ -5,12 +5,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /* =======================================================
 *
 * 	Template Style
 *	Edit this section
 *
 * ======================================================= */
+
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
@@ -29,6 +31,7 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 a:hover, a:active, a:focus {
   color: #F00850;
   outline: none;
@@ -66,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   margin-top: 20px;
 }
+
 @media screen and (max-width: 768px) {
   #cos-header {
     margin-top: 0;
@@ -98,20 +102,24 @@ h1, h2, h3, h4, h5, h6 {
     transform: scaleX(1);
   }
 }
+
 #cos-header .navbar {
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
 #cos-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
   color: #F00850;
   position: relative;
 }
+
 #cos-header #navbar li a span {
   position: relative;
   display: block;
   padding-bottom: 2px;
 }
+
 #cos-header #navbar li a span:before {
   content: "";
   width: 100%;
@@ -131,9 +139,11 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
+
 #cos-header #navbar li a:hover {
   color: #F00850;
 }
+
 #cos-header #navbar li a:hover span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -142,16 +152,19 @@ h1, h2, h3, h4, h5, h6 {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
+
 #cos-header #navbar li.active a {
   background: transparent;
   background: none;
   color: #F00850;
 }
+
 #cos-header #navbar li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
 #cos-header .navbar-brand {
   float: left;
   display: block;
@@ -160,6 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 15px;
   color: #F00850;
 }
+
 #cos-header.navbar-fixed-top {
   position: fixed !important;
   background: #ffffff;
@@ -170,25 +184,30 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   top: 0;
 }
+
 #cos-header.navbar-fixed-top #navbar li a {
   color: #F00850;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 #cos-header.navbar-fixed-top #navbar li a:hover {
   color: #F00850;
 }
+
 #cos-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
   color: #F00850;
 }
+
 #cos-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
 #cos-header .navbar-default {
   border: transparent;
   background: transparent;
@@ -197,6 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-border-radius: 0px;
   border-radius: 0px;
 }
+
 @media screen and (max-width: 768px) {
   #cos-header .navbar-default {
     margin-top: 0px;
@@ -204,16 +224,19 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0px;
   }
 }
+
 #cos-header .navbar-default .brand-slogan {
   margin: 28px 0 0 15px;
   float: left;
   letter-spacing: 2px;
   color: #adadad;
 }
+
 #cos-header .navbar-default .brand-slogan em {
   color: #F00850;
   font-style: normal;
 }
+
 #cos-header a {
   -webkit-transition: 0s;
   -o-transition: 0s;
@@ -227,6 +250,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 50px;
   clear: both;
 }
+
 .section-heading h2 {
   font-size: 50px;
   font-weight: 300;
@@ -237,6 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
   line-height: 1.5;
 }
+
 .section-heading h2:after {
   content: "";
   position: absolute;
@@ -248,16 +273,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: -40px;
   bottom: 0;
 }
+
 @media screen and (max-width: 768px) {
   .section-heading h2 {
     font-size: 30px;
   }
 }
+
 .section-heading h3 {
   font-weight: 300;
   line-height: 1.5;
   color: #161616;
 }
+
 @media screen and (max-width: 768px) {
   .section-heading h3 {
     font-size: 24px !important;
@@ -271,17 +299,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#inf-our-services,
-#inf-about-us,
-#inf-features,
-#inf-testimonials,
-#inf-pricing,
-#inf-press {
+#inf-our-services, #inf-about-us, #inf-features, #inf-testimonials, #inf-pricing, #inf-press {
   padding: 7em 0;
 }
+
 @media screen and (max-width: 480px) {
-  #inf-our-services,
-  #inf-about-us,{
+  #inf-our-services, #inf-about-us, {
     padding: 5em 0;
   }
 }
@@ -292,13 +315,16 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   text-decoration: none;
 }
+
 .inf-nav-toggle.active i::before, .inf-nav-toggle.active i::after {
   background: #F00850;
 }
+
 .inf-nav-toggle:hover, .inf-nav-toggle:focus, .inf-nav-toggle:active {
   outline: none;
   border-bottom: none !important;
 }
+
 .inf-nav-toggle i {
   position: relative;
   display: -moz-inline-stack;
@@ -314,6 +340,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #F00850;
   transition: all .2s ease-out;
 }
+
 .inf-nav-toggle i::before, .inf-nav-toggle i::after {
   content: '';
   width: 25px;
@@ -377,6 +404,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 44px;
   border-bottom: none !important;
 }
+
 @media screen and (max-width: 768px) {
   .inf-nav-toggle {
     display: block;
@@ -389,6 +417,7 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   width: 100%;
 }
+
 .person img {
   display: block;
   margin: 0 auto;
@@ -398,9 +427,11 @@ h1, h2, h3, h4, h5, h6 {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
 .person .name {
   font-size: 24px;
 }
+
 .person .position {
   text-transform: uppercase;
   color: #F00850;
@@ -412,6 +443,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px 0;
   color: #000000;
 }
+
 #footer .copyright {
   margin-bottom: 0px;
   padding-bottom: 0;
@@ -424,21 +456,25 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 .btn.btn-primary {
   background: #F00850;
   color: #ffffff;
   border: none !important;
   border: 2px solid transparent !important;
 }
+
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
   background: #F00850;
 }
+
 .btn:hover, .btn:active, .btn:focus {
   background: #393e46 !important;
   color: #ffffff;
   outline: none !important;
 }
+
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
   border-color: transparent;
 }
@@ -450,12 +486,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
 }
+
 .social li {
   list-style: none;
   padding: 0;
   margin: 0;
   display: inline-block;
 }
+
 .social li a {
   font-size: 16px;
   display: table;
@@ -463,18 +501,22 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   margin: 0 4px;
 }
+
 .social li a i {
   display: table-cell;
   vertical-align: middle;
 }
+
 .social li a:hover, .social li a:active, .social li a:focus {
   text-decoration: none;
   border-bottom: none;
 }
+
 .social li a.social-box {
   background: #F00850;
   color: #ffffff;
 }
+
 .social li a.social-circle {
   background: #F00850;
   color: #ffffff;
@@ -483,13 +525,16 @@ h1, h2, h3, h4, h5, h6 {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
 .social li a:hover {
   background: #393e46 !important;
 }
+
 .social.social-box a {
   background: #F00850;
   color: #ffffff;
 }
+
 .social.social-circle a {
   background: #F00850;
   color: #ffffff;
@@ -505,16 +550,17 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 .owl-carousel:focus .owl-controls .owl-nav, .owl-carousel:hover .owl-controls .owl-nav, .owl-carousel:active .owl-controls .owl-nav {
   opacity: 1;
 }
+
 .owl-carousel .btn-primary:hover, .owl-carousel .btn-primary:focus, .owl-carousel .btn-primary:active {
   background: transparent !important;
   border: 2px solid #ffffff !important;
 }
 
-.owl-carousel .owl-controls,
-.owl-carousel-posts .owl-controls {
+.owl-carousel .owl-controls, .owl-carousel-posts .owl-controls {
   margin-top: 0;
 }
 
@@ -524,8 +570,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.owl-carousel .owl-controls .owl-nav .owl-next,
-.owl-carousel .owl-controls .owl-nav .owl-prev {
+.owl-carousel .owl-controls .owl-nav .owl-next, .owl-carousel .owl-controls .owl-nav .owl-prev {
   top: 50%;
   margin-top: -29px;
   z-index: 9999;
@@ -534,22 +579,23 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.owl-carousel .owl-controls .owl-nav .owl-next i:before,
-.owl-carousel .owl-controls .owl-nav .owl-prev i:before {
+
+.owl-carousel .owl-controls .owl-nav .owl-next i:before, .owl-carousel .owl-controls .owl-nav .owl-prev i:before {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.owl-carousel-posts .owl-controls .owl-nav .owl-next,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
+.owl-carousel-posts .owl-controls .owl-nav .owl-next, .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
   top: 24%;
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-next {
   right: 0;
 }
+
 .owl-carousel .owl-controls .owl-nav .owl-next:hover {
   right: 10px;
 }
+
 .owl-carousel .owl-controls .owl-nav .owl-next:hover i:before {
   color: white;
 }
@@ -557,28 +603,28 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel .owl-controls .owl-nav .owl-prev {
   left: 0;
 }
+
 .owl-carousel .owl-controls .owl-nav .owl-prev:hover {
   left: 10px;
 }
+
 .owl-carousel .owl-controls .owl-nav .owl-prev:hover i:before {
   color: white;
 }
 
-.owl-carousel-posts .owl-controls .owl-nav .owl-next i,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev i {
+.owl-carousel-posts .owl-controls .owl-nav .owl-next i, .owl-carousel-posts .owl-controls .owl-nav .owl-prev i {
   color: #444;
 }
-.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover i,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover i {
+
+.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover i, .owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover i {
   color: #000000;
 }
 
-.owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-next i,
-.owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-prev i {
+.owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-next i, .owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-prev i {
   color: #ffffff;
 }
-.owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-next:hover i,
-.owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-prev:hover i {
+
+.owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-next:hover i, .owl-carousel-fullwidth.inf-light-arrow .owl-controls .owl-nav .owl-prev:hover i {
   color: #ffffff;
 }
 
@@ -591,12 +637,15 @@ h1, h2, h3, h4, h5, h6 {
 .owl-theme .owl-controls .owl-nav [class*="owl-"] {
   background: none !important;
 }
+
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i {
   font-size: 30px;
 }
+
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"] i:focus {
   background: none !important;
 }
+
 .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus {
   background: none !important;
 }
@@ -622,6 +671,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.2s;
   border: 2px solid transparent;
 }
+
 .owl-theme .owl-dots .owl-dot span:hover {
   background: none;
   background: white;
@@ -638,21 +688,25 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
   .owl-carousel-fullwidth .item, .owl-carousel-fullwidth .inf-owl-text-wrap {
     height: inherit;
     padding: 5em 0;
   }
 }
+
 .owl-carousel-fullwidth .inf-owl-text-wrap {
   position: relative;
 }
+
 .owl-carousel-fullwidth .item {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
   position: relative;
 }
+
 .owl-carousel-fullwidth .item .overlay {
   position: absolute;
   top: 0;
@@ -662,19 +716,23 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.5);
   z-index: 8;
 }
+
 .owl-carousel-fullwidth .item img {
   max-width: 100%;
 }
+
 .owl-carousel-fullwidth .item .phone-image {
   position: relative;
   z-index: 99;
 }
+
 .owl-carousel-fullwidth .item .phone-image .phone {
   float: right;
   text-align: right;
   position: relative;
   bottom: -12em;
 }
+
 @media screen and (max-width: 768px) {
   .owl-carousel-fullwidth .item .phone-image .phone {
     bottom: 0em;
@@ -684,29 +742,35 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 }
+
 .owl-carousel-fullwidth .item .phone-image .phone img {
   max-width: 100%;
 }
+
 .owl-carousel-fullwidth .item .inf-owl-text {
   display: table-cell;
   vertical-align: middle;
   z-index: 10;
   position: relative;
 }
+
 .owl-carousel-fullwidth .item .inf-owl-text a {
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .owl-carousel-fullwidth .item .inf-owl-text a:hover {
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
 }
+
 .owl-carousel-fullwidth .item .inf-owl-text .inf-lead, .owl-carousel-fullwidth .item .inf-owl-text .inf-lead-2, .owl-carousel-fullwidth .item .inf-owl-text .inf-sub-lead {
   color: #ffffff;
   margin: 0;
   padding: 0;
 }
+
 .owl-carousel-fullwidth .item .inf-owl-text .inf-lead {
   font-weight: 700;
   margin-bottom: 20px;
@@ -718,6 +782,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 50px;
   color: #ffffff;
 }
+
 @media screen and (max-width: 768px) {
   .owl-carousel-fullwidth .item .inf-owl-text .inf-lead {
     margin-bottom: 20px;
@@ -725,6 +790,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 30px;
   }
 }
+
 .owl-carousel-fullwidth .item .inf-owl-text .inf-sub-lead {
   font-size: 30px;
   line-height: 30px;
@@ -733,6 +799,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   color: white;
 }
+
 @media screen and (max-width: 768px) {
   .owl-carousel-fullwidth .item .inf-owl-text .inf-sub-lead {
     font-size: 24px;
@@ -740,9 +807,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.js .to-animate,
-.js .to-animate-2,
-.js .single-animate {
+.js .to-animate, .js .to-animate-2, .js .single-animate {
   opacity: 0;
 }
 
@@ -756,6 +821,7 @@ h1, h2, h3, h4, h5, h6 {
 .row-bottom-padded-lg {
   padding-bottom: 7em;
 }
+
 @media screen and (max-width: 768px) {
   .row-bottom-padded-lg {
     padding-bottom: 2em;
@@ -765,6 +831,7 @@ h1, h2, h3, h4, h5, h6 {
 .row-bottom-padded-md {
   padding-bottom: 4em;
 }
+
 @media screen and (max-width: 768px) {
   .row-bottom-padded-md {
     padding-bottom: 2em;
@@ -774,6 +841,7 @@ h1, h2, h3, h4, h5, h6 {
 .row-bottom-padded-sm {
   padding-bottom: 2em;
 }
+
 @media screen and (max-width: 768px) {
   .row-bottom-padded-sm {
     padding-bottom: 2em;
@@ -788,11 +856,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .codebox {
-        border:1px solid black;
-        background-color:#EEEEFF;
-        white-space: pre-line;
-        padding:10px;
-        font-size:0.9em;
-        display: inline-block;
+  border: 1px solid black;
+  background-color: #EEEEFF;
+  white-space: pre-line;
+  padding: 10px;
+  font-size: 0.9em;
+  display: inline-block;
 }
+
 /*# sourceMappingURL=style.css.map */
