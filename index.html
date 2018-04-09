@@ -39,7 +39,7 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" id="theme" type="text/css" href="css/dark.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -70,6 +70,7 @@
 						<li><a href="#" data-nav-section="download"><span>Downloads</span></a></li>
 						<li><a href="#" data-nav-section="bugs"><span>Report Bugs</span></a></li>
 						<li><a href="#" data-nav-section="support"><span>Support Us</span></a></li>
+						<li><a onclick="changeTheme()"><span>Change Theme</span></li>
 					</ul>
 				</div>
 			</nav>
@@ -86,6 +87,7 @@
 						<div class="col-md-8 col-md-offset-2 to-animate">
 							<h3>We're a small team dedicated to provide you with a Secure, Stable and Feature rich Android Experience.</h3>
 							<h3>Powered by Android™ 8.1 Oreo.</h3>
+							<a onclick="changeTheme()">Change External CSS</a>
 						</div>
 					</div>
 				</div>
@@ -323,7 +325,20 @@
 			</div>
 		</div>
 	</footer>
+	<script>
 
+	var themeName = "css/dark";
+
+	function changeTheme(){
+		if (themeName == "css/dark"){
+				themeName = "css/light";
+			} else {
+				themeName = "css/dark";
+			}
+		document.getElementById("theme").href = themeName + ".css";
+		}
+
+	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
