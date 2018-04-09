@@ -864,24 +864,4 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-.accordion {
-  background-color: #180830;
-  color: #f00850;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 20px;
-  transition: 0.4s;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: #180830;
-  overflow: hidden;
-}
-
 /*# sourceMappingURL=style.css.map */

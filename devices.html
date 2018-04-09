@@ -39,6 +39,8 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/accordion_dark.css" type="text/css" id="acc_theme">
 	<link rel="stylesheet" href="css/dark.css" type="text/css" id="theme">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -362,11 +364,24 @@
 	function changeTheme(){
 		if (themeName == "css/dark"){
 				themeName = "css/light";
+				changeAcc();
 			} else {
 				themeName = "css/dark";
+				changeAcc();
 			}
 		document.getElementById("theme").href = themeName + ".css";
 		}
+
+		var athemeName = "css/accordion_dark";
+
+		function changeAcc(){
+			if (athemeName == "css/accordion_dark"){
+					athemeName = "css/accordion_light";
+				} else {
+					athemeName = "css/accordion_dark";
+				}
+			document.getElementById("acc_theme").href = athemeName + ".css";
+			}
 
 	</script>
 	<!-- jQuery -->
