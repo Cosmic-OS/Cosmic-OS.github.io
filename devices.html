@@ -39,7 +39,7 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css" title="light">
+	<link rel="stylesheet" href="css/dark.css" type="text/css" id="theme">
 	<!-- Accordion  -->
 	<link rel="stylesheet" href="css/accordion.css">
 	<!-- Modernizr JS -->
@@ -57,6 +57,11 @@
 					<img style="float:left; margin-top:0.3em; margin-right: 0.5em;" src="images/favicon.png" width=50px height=50px />
 					<a class="navbar-brand" href="index.html">Cosmic-OS</a>
 				</div>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a onclick="changeTheme()"><span>Change Theme</span></a></li>
+				</ul>
 			</div>
 		</nav>
 		<!-- </div> -->
@@ -328,9 +333,6 @@
 					</div>
 
 				</div>
-
-
-
 			</div>
 		</div>
 	</div>
@@ -355,6 +357,20 @@
 		</div>
 	</footer>
 
+	<script>
+
+	var themeName = "css/dark";
+
+	function changeTheme(){
+		if (themeName == "css/dark"){
+				themeName = "css/light";
+			} else {
+				themeName = "css/dark";
+			}
+		document.getElementById("theme").href = themeName + ".css";
+		}
+
+	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
