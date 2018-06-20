@@ -37,7 +37,6 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" id="theme" type="text/css" href="css/dark.css">
-
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 
@@ -61,19 +60,32 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" data-nav-section="home"><span>Home</span></a></li>
 						<li><a href="#" data-nav-section="about"><span>About</span></a></li>
 						<li><a href="#" data-nav-section="team"><span>Team</span></a></li>
 						<li><a href="#" data-nav-section="contributors"><span>Contributors</span></a></li>
 						<li><a href="#" data-nav-section="download"><span>Downloads</span></a></li>
 						<li><a href="#" data-nav-section="bugs"><span>Report Bugs</span></a></li>
 						<li><a href="#" data-nav-section="support"><span>Support Us</span></a></li>
-						<li><a onclick="changeTheme()"><span>Change Theme</span></a></li>
+						<li><a onclick="changeTheme()" style="cursor: pointer" ><span>Change Theme</span></a></li>
 					</ul>
 				</div>
 			</nav>
 			<!-- </div> -->
 		</div>
 	</header>
+	<!-- JumboTron -->
+	<div id="inf-about-us" data-section="home">
+		<div class="container">
+			<div class="row" id="about-us">
+				<div class="col-md-12 jumbo-style text-center">
+					<h2 class="to-animate">Hello,</h2>
+					<h3 class="to-animate">Experience Cosmic-OS; a Secure, Stable and Feature rich Android Experience.</h3>
+					<a class="btn btn-primary btn-lg to-animate" href="devices.html" role="button" target="_blank">Explore The Cosmos</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- About Section -->
 	<div id="inf-about-us" data-section="about">
 		<div class="container">
@@ -83,8 +95,7 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 to-animate">
 							<h3>We're a small team dedicated to provide you with a Secure, Stable and Feature rich Android Experience.</h3>
-							<h3>Powered by 
-Android&trade; 8.1 Oreo.</h3>
+							<h3>Powered by Android&trade; 8.1 Oreo.</h3>
 						</div>
 					</div>
 				</div>
