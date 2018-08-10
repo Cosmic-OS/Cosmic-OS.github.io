@@ -13,20 +13,5 @@ function getLink(codename) {
         error: function () {
             alert('Server error');
         }
-
     });
-    // var $doc = $.parseXML(data);
-    // console.log($($doc).find('DirectUrl'));
-
-
 }
-/*
-var XML, parser, xmlDoc, directURL;
-    $.ajax({url: link, success: function (data){ XML = data;}});
-    parser = new DOMParser();
-    console.log(XML);
-    xmlDoc = parser.parseFromString(XML,"text/xml");
-    directURL = xmlDoc.getElementsByTagName("DirectUrl")[0].childNodes[0].nodeValue;
-    console.log(directURL);
-    document.getElementById(codename).setAttribute('href', directURL);
- */
