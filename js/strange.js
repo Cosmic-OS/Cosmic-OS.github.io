@@ -1,19 +1,20 @@
 function getLink(codename) {
-    let parse;
-    var link = "https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/pulsar-release/" + codename + ".xml";
-    var data;
-    $.ajax({
-        url: link,
-        type: 'get',
-        success: function(response){
-            var $doc = $.parseXML(response);
-            $data = ($($doc).find('DirectUrl').text());
-            $('a#'+codename).attr('href', $data);
-        },
-        error: function () {
-            alert('Server error');
-        }
-    });
+    for (k=0;k<codename.length;k++) {
+        var link = "https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/pulsar-release/" + codename[k] + ".xml";
+        console.log(codename[k])
+        $.ajax({
+            url: link,
+            type: 'get',
+            success: function (response) {
+                var $doc = $.parseXML(response);
+                $data = ($($doc).find('DirectUrl').text());
+                $('a#' + codename[k]).attr('href', $data);
+            },
+            error: function () {
+                alert('Server error');
+            }
+        })
+    }
 }
 var isDevicePage;
 function checkThemeStatus() {
@@ -35,18 +36,18 @@ function changeAcc(acTheme) {
 function changeTheme() {
     if (themeName == "css/dark"){
         applyTheme('light');
-        setCookie('themeStatus', 'light', 30);
         if (isDevicePage == 'yes') {
             console.log("true,light");
             changeAcc('light');
         }
+        setCookie('themeStatus', 'light', 30);
     } else {
         applyTheme('dark');
-        setCookie('themeStatus', 'dark', 30);
         if (isDevicePage == 'yes') {
             console.log("true,dark");
             changeAcc('dark');
         }
+        deleteCookie('themeStatus');
     }
 }
 function applyTheme(theme){
@@ -86,4 +87,11 @@ function getCookie(name) {
         if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
     return null;
+}
+function deleteCookie(cname) {
+    var d = new Date(); //Create an date object
+    d.setTime(d.getTime() - (1000*60*60*24)); //Set the time to the past. 1000 milliseonds = 1 second
+    var expires = "expires=" + d.toGMTString(); //Compose the expirartion date
+    window.document.cookie = cname+"="+"; "+expires;//Set the cookie with name and the expiration date
+
 }

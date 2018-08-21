@@ -79,7 +79,7 @@
 				<div class="col-md-8 col-md-offset-2 to-animate">
 					<h3>Devices Officially supported by us.</h3>
 					<!-- Google -->
-					<button class="accordion" onclick="getLink('marlin');">Google</button>
+					<button class="accordion" onclick="getLink(['marlin']);">Google</button>
 					<div class="panel">
 						<div class="col-md-12 text-center to-animate">
 							<div class="phone-image">
@@ -94,7 +94,7 @@
 						</div>
 					</div>
                     <!-- Honor -->
-					<button class="accordion" onclick="getLink('berkeley');">Honor</button>
+					<button class="accordion" onclick="getLink(['berkeley']);">Honor</button>
 					<div class="panel">
 						<div class="col-md-12 text-center to-animate">
 							<div class="phone-image">
@@ -110,12 +110,23 @@
 					</div>
 
 					<!-- Lenovo -->
-					<button class="accordion" onclick="getLink('kuntao');">Lenovo</button>
+					<button class="accordion" onclick="getLink(['A6020','kuntao']);">Lenovo</button>
 					<div class="panel">
 						<div class="col-md-12 text-center to-animate">
 							<div class="phone-image">
+								<h3 class="name">Lenovo Vibe K5/K5+</h3>
+								<div class="position">A6020</div>
+								<p>Chaitanaya Mittal</p>
+								<ul class="social social-circle">
+									<li><a href="https://forum.xda-developers.com/k5-plus/development/rom-cosmic-os-v3-2-pulsar-t3823677" target="_blank"><i class="icon-group"></i></a></li>
+									<li><a id="A6020"><i class="icon-chevron-down"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-12 text-center to-animate">
+							<div class="phone-image">
 								<h3 class="name">Lenovo P2</h3>
-								<div class="position">Kuntao</div>
+								<div class="position">kuntao</div>
 								<p>Priyesh</p>
 								<ul class="social social-circle">
 									<li><a href="https://forum.xda-developers.com/lenovo-p2/development/rom-cosmic-os-v3-1-kuntao-t3733568" target="_blank"><i class="icon-group"></i></a></li>
@@ -125,7 +136,7 @@
 						</div>
 					</div>
 					<!-- Hello Moto (LOL, whoever made that pun did a good job. comment by Sid Sun)-->
-					<button class="accordion" onclick="getLink('falcon');getLink('titan');getLink('potter');getLink('sanders');getLink('addison');">Motorola</button>
+					<button class="accordion" onclick="getLink(['falcon','titan','potter','sanders','addison']);">Motorola</button>
 					<div class="panel">
 						<div class="col-md-4 text-center to-animate">
 							<div class="phone-image">
@@ -184,7 +195,7 @@
 						</div>
 					</div>
 					<!-- OnePLus -->
-					<button class="accordion" onclick="getLink('oneplus2');getLink('oneplus3');">OnePlus</button>
+					<button class="accordion" onclick="getLink(['oneplus2','oneplus3']);">OnePlus</button>
 					<div class="panel">
 						<div class="col-md-7 text-center to-animate">
 							<div class="phone-image">
@@ -213,8 +224,8 @@
 						</div>
 					</div>
 
-            <!-- Samsung -->
-					<button class="accordion" onclick="getLink('j7velte');">Samsung</button>
+            <!-- Uncle Sammy -->
+					<button class="accordion" onclick="getLink(['j7velte']);">Samsung</button>
 					<div class="panel">
 
 						<div class="col-md-12 text-center to-animate">
@@ -231,7 +242,7 @@
 					</div>
 
 					<!-- Sony -->
-					<button class="accordion" onclick="getLink('huashan')">Sony</button>
+					<button class="accordion" onclick="getLink(['huashan'])">Sony</button>
 					<div class="panel">
 
 						<div class="col-md-12 text-center to-animate">
@@ -247,9 +258,8 @@
 						</div>
 					</div>
 					<!-- Xiaomi -->
-					<button class="accordion" onclick="getLink('gemini');getLink('tissot');getLink('santoni');getLink('riva');getLink('wt88047');getLink('land');getLink('kenzo');getLink('mido');"> Xiaomi</button>
+					<button class="accordion" onclick="getLink(['gemini','tissot','santoni','riva','wt88047','land','kenzo','mido']);"> Xiaomi</button>
 					<div class="panel">
-
                     <div class="col-md-3 text-center to-animate">
 							<div class="phone-image">
 								<h3 class="name">Mi 5</h3>
@@ -261,7 +271,6 @@
 								</ul>
 							</div>
 					</div>
-
                     <div class="col-md-3 text-center to-animate">
 							<div class="phone-image">
 								<h3 class="name">Mi A1</h3>
@@ -273,7 +282,6 @@
 								</ul>
 							</div>
 						</div>
-
                         <div class="col-md-3 text-center to-animate">
 							<div class="phone-image">
 								<h3 class="name">Redmi 4/4x</h3>
@@ -285,7 +293,6 @@
 								</ul>
 							</div>
 						</div>
-
                          <div class="col-md-3 text-center to-animate">
 							<div class="phone-image">
 								<h3 class="name">Redmi 4A/Redmi 5A</h3>
@@ -297,8 +304,7 @@
 								</ul>
 							</div>
 						</div>
-
-                        <div class="col-md-3 text-center to-animate">
+						<div class="col-md-3 text-center to-animate">
 							<div class="phone-image">
 								<h3 class="name">Redmi 2</h3>
 								<div class="position">Wt88047</div>
@@ -310,7 +316,7 @@
 							</div>
 						</div>
 
-                        <div class="col-md-3 text-center to-animate">
+						<div class="col-md-3 text-center to-animate">
 							<div class="phone-image">
 								<h3 class="name">Redmi 3s</h3>
 								<div class="position">Land</div>
@@ -333,7 +339,6 @@
 								</ul>
 							</div>
 						</div>
-
 						<div class="col-md-3 text-center to-animate">
 							<div class="phone-image">
 								<h3 class="name">Redmi Note 4</h3>
@@ -345,11 +350,10 @@
 								</ul>
 							</div>
 						</div>
-
 					</div>
 
 					<!-- YU? -->
-					<button class="accordion" onclick="getLink('garlic');getLink('lettuce');getLink('z2_plus');getLink('z2_row')">YU</button>
+					<button class="accordion" onclick="getLink(['garlic','lettuce']);">YU</button>
 					<div class="panel">
 						<div class="col-md-7 text-center to-animate">
 							<div class="phone-image">
@@ -374,7 +378,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="accordion">Zuk</button>
+					<button class="accordion" onclick="getLink(['z2_plus','z2_row']);">Zuk</button>
 					<div class="panel">
 						<div class="col-md-7 text-center to-animate">
 							<div class="phone-image">
