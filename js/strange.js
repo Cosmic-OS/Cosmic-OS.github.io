@@ -1,14 +1,14 @@
 function getLink(codename) {
     for (k=0;k<codename.length;k++) {
+        var deviceCodename = codename[k];
         var link = "https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/pulsar-release/" + codename[k] + ".xml";
-        console.log(codename[k]);
         $.ajax({
             url: link,
             type: 'get',
             success: function (response) {
                 var $doc = $.parseXML(response);
                 $data = ($($doc).find('DirectUrl').text());
-                $('a#' + codename[k]).attr('href', $data);
+                $('a#' + deviceCodename).attr('href', $data);
             },
             error: function () {
                 alert('Server error');
@@ -37,14 +37,12 @@ function changeTheme() {
     if (themeName == "css/dark"){
         applyTheme('light');
         if (isDevicePage == 'yes') {
-            console.log("true,light");
             changeAcc('light');
         }
         setCookie('themeStatus', 'light', 30);
     } else {
         applyTheme('dark');
         if (isDevicePage == 'yes') {
-            console.log("true,dark");
             changeAcc('dark');
         }
         deleteCookie('themeStatus');
@@ -56,14 +54,12 @@ function applyTheme(theme){
         console.log("light, comin' right up");
         themeName = "css/light";
         if (isDevicePage == 'yes') {
-            console.log("true");
             changeAcc('light');
         }
     } else {
         console.log("Dark it is!");
         themeName = "css/dark";
         if (isDevicePage == 'yes') {
-            console.log("true");
             changeAcc('dark');
         }
     }
