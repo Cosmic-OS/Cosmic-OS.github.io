@@ -1,7 +1,7 @@
 function getLink(codename) {
     for (k=0;k<codename.length;k++) {
         var link = "https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/pulsar-release/" + codename[k] + ".xml";
-        console.log(codename[k])
+        console.log(codename[k]);
         $.ajax({
             url: link,
             type: 'get',
@@ -13,7 +13,7 @@ function getLink(codename) {
             error: function () {
                 alert('Server error');
             }
-        })
+        });
     }
 }
 var isDevicePage;
