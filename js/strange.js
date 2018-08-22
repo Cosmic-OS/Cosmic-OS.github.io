@@ -1,20 +1,24 @@
 function getLink(codename) {
     for (k=0;k<codename.length;k++) {
-        var deviceCodename = codename[k];
-        var link = "https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/pulsar-release/" + codename[k] + ".xml";
-        $.ajax({
-            url: link,
-            type: 'get',
-            success: function (response) {
-                var $doc = $.parseXML(response);
-                $data = ($($doc).find('DirectUrl').text());
-                $('a#' + deviceCodename).attr('href', $data);
-            },
-            error: function () {
-                alert('Server error');
-            }
-        });
+        linkFetch(codename[k]);
     }
+}
+function linkFetch(device) {
+    var deviceCodename = device, directLink;
+    var link = "https://raw.githubusercontent.com/Cosmic-OS/platform_vendor_ota/pulsar-release/" + device + ".xml";
+    $.ajax({
+        url: link,
+        type: 'get',
+        success: function (response) {
+            var $doc = $.parseXML(response);
+            $data = ($($doc).find('DirectUrl').text());
+            directLink = $data;
+            $('#' + deviceCodename).attr('href', $data);
+        },
+        error: function () {
+            alert('Server error');
+        }
+    });
 }
 var isDevicePage;
 function checkThemeStatus() {
