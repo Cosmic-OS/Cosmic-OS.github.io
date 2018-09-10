@@ -22,15 +22,15 @@ function linkFetch(device) {
 }
 var isDevicePage;
 function checkThemeStatus() {
-    var themeStatus = getCookie('themeStatus');
-    if (themeStatus == 'light') {
+    var themeStatus = localStorage.getItem("theme");
+    if (themeStatus === "light") {
         applyTheme('light');
     } else {
         applyTheme('dark');
     }
 }
 function changeAcc(acTheme) {
-    if (acTheme == "light"){
+    if (acTheme === "light"){
         athemeName = "css/accordion_light";
     } else {
         athemeName = "css/accordion_dark";
@@ -38,37 +38,38 @@ function changeAcc(acTheme) {
     document.getElementById("acc_theme").href = athemeName + ".css";
 }
 function changeTheme() {
-    if (themeName == "css/dark"){
+    if (themeName === "css/dark"){
         applyTheme('light');
-        if (isDevicePage == 'yes') {
+        if (isDevicePage === 'yes') {
             changeAcc('light');
         }
-        setCookie('themeStatus', 'light', 30);
+        localStorage.setItem("theme", "light");
     } else {
         applyTheme('dark');
-        if (isDevicePage == 'yes') {
+        if (isDevicePage === 'yes') {
             changeAcc('dark');
         }
-        deleteCookie('themeStatus');
+        localStorage.removeItem("theme");
     }
 }
 function applyTheme(theme){
     console.log(theme);
-    if (theme == 'light') {
+    if (theme === 'light') {
         console.log("light, comin' right up");
         themeName = "css/light";
-        if (isDevicePage == 'yes') {
+        if (isDevicePage === 'yes') {
             changeAcc('light');
         }
     } else {
         console.log("Dark it is!");
         themeName = "css/dark";
-        if (isDevicePage == 'yes') {
+        if (isDevicePage === 'yes') {
             changeAcc('dark');
         }
     }
     document.getElementById("styleSheet").href = themeName + ".css";
 }
+/*
 function setCookie(name,value,days) {
     var expires = "";
     if (days) {
@@ -94,4 +95,4 @@ function deleteCookie(cname) {
     var expires = "expires=" + d.toGMTString(); //Compose the expirartion date
     window.document.cookie = cname+"="+"; "+expires;//Set the cookie with name and the expiration date
 
-}
+}*/
